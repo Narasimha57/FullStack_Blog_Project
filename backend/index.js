@@ -6,7 +6,11 @@ const app = express()
 const port =  process.env.PORT || 9000;
 
 connectDB();
-app.use(cors())
+app.use(cors({
+    origin: "https://fullstack-blog-project-frontend.onrender.com",
+    credentials: true,
+  })
+)
 app.use(express.json())
 app.use(express.static("public/upload"))
 app.get('/', (req, res)=>{
