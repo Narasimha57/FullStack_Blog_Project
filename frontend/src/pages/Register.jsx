@@ -24,7 +24,7 @@ const Register = () => {
     // }
     try {
       const res = await axios.post(
-        "https://fullstack-blog-project-backend.onrender.com",
+        "http://localhost:9000/api/v1/user/register",
         input
       );
       alert(res.data.message);
