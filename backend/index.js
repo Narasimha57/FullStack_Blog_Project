@@ -15,5 +15,5 @@ app.get('/', (req, res)=>{
 //API ROUTES
 app.use('/api/v1', Routes)
 app.listen(port,()=>{
-    console.log(`API is running on http://localhost:${PORT}`)
+    console.log(`API is running on http://localhost:${port}`)
 })
