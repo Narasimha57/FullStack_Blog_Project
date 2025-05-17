@@ -9,6 +9,9 @@ import AddBlog from "./pages/AddBlog";
 import AddCategory from "./pages/AddCategory";
 import SingleBlog from "./pages/SingleBlog";
 import ProtectedRoutes from "./services/ProtectedRoutes";
+
+const backendURL = "https://fullstack-blog-project-backend.onrender.com"
+
 function App() {
 
   return (
