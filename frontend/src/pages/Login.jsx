@@ -14,7 +14,7 @@ const Login = () => {
   e.preventDefault();
   try {
     const res = await axios.post(
-      "http://localhost:9000/api/v1/user/login",
+      "https://fullstack-blog-project-backend.onrender.com/api/v1/user/login",
       input
     );
     alert(res.data.message);

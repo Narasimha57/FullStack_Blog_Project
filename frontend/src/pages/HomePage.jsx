@@ -5,7 +5,7 @@ const HomePage = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const fetchAllBlogs = async () => {
-      const res = await axios.get("http://localhost:9000/api/v1/get/allblogs", {
+      const res = await axios.get("https://fullstack-blog-project-backend.onrender.com/api/v1/get/allblogs", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
