@@ -24,7 +24,7 @@ const SingleBlog = () => {
         <div className="row">
         <h1 className='my-3'>Demo</h1>
         <p className='my-3'>Published Date: </p>
-        <img src={`http://localhost:9000/${blogs.thumbnail}`} className='img img-responsive img-rounded my-3' alt=""
+        <img src={`https://fullstack-blog-project-backend.onrender.com/${blogs.thumbnail}`} className='img img-responsive img-rounded my-3' alt=""
          />
          <p className="my-3">{blogs.description}</p>
         </div> 

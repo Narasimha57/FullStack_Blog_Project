@@ -33,7 +33,7 @@ const HomePage = () => {
                           data-mdb-ripple-color="light"
                         >
                           <img
-                            src={`http://localhost:9000/${item.thumbnail}`}
+                            src={`https://fullstack-blog-project-backend.onrender.com/${item.thumbnail}`}
                             className="img-fluid"
                           />
                           <a href="#">
