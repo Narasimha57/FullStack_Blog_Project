@@ -3,7 +3,7 @@ import cors from 'cors'
 import connectDB from './config/db.js';
 import Routes from "./routes/blog.js"
 const app = express()
-const PORT =  9000;
+const port =  process.env.PORT || 9000;
 
 connectDB();
 app.use(cors())
@@ -14,6 +14,6 @@ app.get('/', (req, res)=>{
 })
 //API ROUTES
 app.use('/api/v1', Routes)
-app.listen(PORT,()=>{
+app.listen(port,()=>{
     console.log(`API is running on http://localhost:${PORT}`)
 })
