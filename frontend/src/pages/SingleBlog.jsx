@@ -8,7 +8,7 @@ const SingleBlog = () => {
   const [blogs, setBlogs] = useState([]);
   useEffect(() => {
     const fetchAllBlogs = async () => {
-      const res = await axios.get(`https://fullstack-blog-project-backend.onrender.com/api/v1/get/blogs/${id}`,{
+      const res = await axios.get(`/get/blogs/${id}`,{
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },

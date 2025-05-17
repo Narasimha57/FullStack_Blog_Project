@@ -16,7 +16,7 @@ const AddBlog = () => {
   useEffect(() => {
     const fetchAllCategories = async () => {
       const res = await axios.get(
-        "https://fullstack-blog-project-backend.onrender.com/api/v1/get/categories",
+        "/get/categories",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
