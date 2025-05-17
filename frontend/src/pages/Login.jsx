@@ -14,7 +14,7 @@ const Login = () => {
   e.preventDefault();
   try {
     const res = await axios.post(
-      "https://fullstack-blog-project-backend.onrender.com/api/v1/user/login",
+      "https://fullstack-blog-project-backend.onrender.com",
       input
     );
     alert(res.data.message);
@@ -24,6 +24,18 @@ const Login = () => {
   } catch (error) {
     alert(error.response.data.message);
   }
+  // try {
+  //   const res = await axios.post(
+  //     "https://fullstack-blog-project-backend.onrender.com/api/v1/user/login",
+  //     input
+  //   );
+  //   alert(res.data.message);
+  //   localStorage.setItem("token", res.data.token)
+  //   localStorage.setItem("username", res.data.name)
+  //   navigate("/");
+  // } catch (error) {
+  //   alert(error.response.data.message);
+  // }
 };
 
   return (

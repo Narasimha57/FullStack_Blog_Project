@@ -12,9 +12,19 @@ const Register = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // try {
+    //   const res = await axios.post(
+    //     "https://fullstack-blog-project-backend.onrender.com/api/v1/user/register",
+    //     input
+    //   );
+    //   alert(res.data.message);
+    //   navigate("/login");
+    // } catch (error) {
+    //   alert(error.response.data.message);
+    // }
     try {
       const res = await axios.post(
-        "https://fullstack-blog-project-backend.onrender.com/api/v1/user/register",
+        "https://fullstack-blog-project-backend.onrender.com",
         input
       );
       alert(res.data.message);

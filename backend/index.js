@@ -19,5 +19,5 @@ app.get('/', (req, res)=>{
 //API ROUTES
 app.use('/api/v1', Routes)
 app.listen(port,()=>{
-    console.log(`API is running on https://fullstack-blog-project-frontend.onrender.com:${port}`)
+    console.log(`API is running on http://localhost:${port}`)
 })
